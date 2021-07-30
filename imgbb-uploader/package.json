@@ -1,0 +1,97 @@
+{
+  "_from": "imgbb-uploader@^1.2.0",
+  "_id": "imgbb-uploader@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Sz7s11zSRcGmfhWZU06Kk9n7LEDhlzfl/L7gRTvT6CuqDbi78AZQsa1Vgd9iN+c/6KoIneP0NppKNjORtLPQnw==",
+  "_location": "/imgbb-uploader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "imgbb-uploader@^1.2.0",
+    "name": "imgbb-uploader",
+    "escapedName": "imgbb-uploader",
+    "rawSpec": "^1.2.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.2.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/imgbb-uploader/-/imgbb-uploader-1.2.0.tgz",
+  "_shasum": "12f1adf8f16217603fa0e2dbcc9857b5366af0c0",
+  "_spec": "imgbb-uploader@^1.2.0",
+  "_where": "/data/data/com.termux/files/home/XPTNBOTV",
+  "author": {
+    "name": "TheRealBarenziah"
+  },
+  "browser": "lib/cjs/index.js",
+  "bugs": {
+    "url": "https://github.com/TheRealBarenziah/imgbb-uploader/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Lightweight module to upload images through Imgbb API.",
+  "devDependencies": {
+    "@babel/types": "^7.11.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.0.27",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5",
+    "jest": "^26.4.0",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.26.3",
+    "tfaker": "^0.1.0",
+    "ts-jest": "^26.2.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7",
+    "waifu-generator": "^1.0.0"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "homepage": "https://github.com/TheRealBarenziah/imgbb-uploader#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "keywords": [
+    "imgbb",
+    "imgbb-uploader",
+    "image upload",
+    "picture upload"
+  ],
+  "license": "SEE LICENSE IN TARGARYEN_UNLICENSE",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "name": "imgbb-uploader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRealBarenziah/imgbb-uploader.git"
+  },
+  "scripts": {
+    "build": "node rebuild.js && tsc -p tsconfig-cjs.json",
+    "build:cjs": "node rebuild.js && tsc -p tsconfig-cjs.json",
+    "build:esm": "node rebuild.js && tsc -p tsconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "pretty-quick": "pretty-quick",
+    "preversion": "npm run lint",
+    "test": "jest --config jestconfig.json",
+    "version": "npm run format && git add -A src"
+  },
+  "types": "lib/index.d.ts",
+  "version": "1.2.0"
+}
