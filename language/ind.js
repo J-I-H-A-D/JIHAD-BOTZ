@@ -97,7 +97,7 @@ exports.pc = () => {
 }
 
 exports.registered = (nameUser, ageUser, serialUser, time, sender, botName) => {
-	return`*「 REGISTRASI BERHASIL 」*\nUser Info :\n\n*➸ Name : ${namaUser}*\n*➸ Number : wa.me/${sender.split("@")[0]}*\n*➸ Age : ${umurUser}*\n*➸ Registration time : ${time}*\n\n*「SN」: ${serialUser}*\n_NOTE : This message is very important:v_`
+	return`*「 SUCCESSFUL REGISTRATIONll 」*\nUser Info :\n\n*➸ Name : ${namaUser}*\n*➸ Number : wa.me/${sender.split("@")[0]}*\n*➸ Age : ${umurUser}*\n*➸ Registration time : ${time}*\n\n*「SN」: ${serialUser}*\n_NOTE : This message is very important:v_`
 }
 
 exports.cmdnf = (prefix, command) => {
